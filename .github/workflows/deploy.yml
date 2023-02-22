@@ -6,6 +6,10 @@ on:
   repository_dispatch:
     types: [publish]
 
+defaults:
+  run:
+    working-directory: frontend
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,7 +24,6 @@ jobs:
 
       - name: Install and Build App
         run: |
-          cd frontend
           npm install
           touch .env.local
           echo DATOCMS_API_TOKEN=${{ secrets.DATOCMS_API_TOKEN }} >> .env.local
@@ -32,4 +35,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: public # The branch the action will deploy to
-          FOLDER: frontend/out # The folder the action will deploy to
+          FOLDER: out # The folder the action will deploy to
