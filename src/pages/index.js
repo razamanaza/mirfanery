@@ -8,8 +8,8 @@ export default function Home() {
     <>
       <Head>
         <link rel="canonical" href="https://https://mirfanery.ru" />
-        <meta charSet="UTF-8" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Мирфанеры</title>
 
@@ -19,7 +19,7 @@ export default function Home() {
           content="Фанера любых марок в наличии на складе. Доставка по Приморскому краю."
         />
         <meta name="robots" content="index, follow" />
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="Russian" />
         <meta name="author" content="Мирфанеры" />
 
