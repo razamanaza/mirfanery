@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  basePath: "/mirfanery",
   images: {
     domains: ["www.datocms-assets.com"],
     loader: "akamai",
